@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      STEP2 in WLANs @NetWis Lab
+    </title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="css/application.css">
+
+    <!-- Latex -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600' rel='stylesheet' type='text/css'>
+
+    <!-- NanoGallery (http://nanogallery.brisbois.fr/) -->
+    <link href="css/nanogallery/nanogallery.min.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+  
+    <!-- Header -->
+    <!-- Professor photos and contact infos, netwis logo, navigation (people, gallery, faqs) -->
+    <div class="header"> 
+      <!-- Professor photos and contact infos -->
+      <div class="header__item header__item--professor">
+        <div id="photo-header">
+          <a href="index.php" class="photo-header--figure">
+            <img src="img/people/wenye1996.jpg">
+            <p>1996 - Beijing</p>
+          </a>
+          <a href="index.php" class="photo-header--figure">
+            <img src="img/people/wenye2016.jpg">
+            <p>2016 - Raleigh</p>
+          </a>
+        </div>
+        <div>
+          <p> 
+            <span id="name-prof">Wenye Wang (王文野)</span><br>
+            <span id="prof">Professor, IEEE Fellow </span><br>
+               Electrical and Computer Engineering<br>
+               NC State University
+          </p>
+          <div class="contact-faculty">
+            <ul>
+              <li><a><span data-icon="&#xe602;"></span> 919-513-2549</a></li>
+              <li><a href="mailto:wwang@ncsu.edu" target="top"><span data-icon="&#xe604;"></span> wwang@ncsu.edu</a></li>
+              <li><a href="https://www.google.com/maps/place/Department+of+Electrical+and+Computer+Engineering/@35.772063,-78.674191,17z/data=!3m1!4b1!4m2!3m1!1s0x89acf59e741b1d09:0x3dff08db302f5df4" target="blank"><span data-icon="&#xe603;"></span> 3056 Engineering Building II, 890 Oval Drive<br></a></li>
+<li><a><span data-icon="&#xe605;"></span> schedule by emails. </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Netwis logo, navigation (people, gallery, faqs) -->
+      <div class="header__item header__item--nav">
+        <ul>
+          <li><a href="index.php" id="logo"><img src="img/logos/netwis2.png" width="100"></a></li>
+          <li><a href="people.php" class="">People</a></li>
+          <li><a href="gallery.php" class="">Gallery</a></li>
+          <li><a href="faqs.php" class="">FAQs</a></li>
+        </ul>
+      </div>
+        
+
+    </div>
+
+   
+    <div class="wrapper"> <!-- container for main content and aside -->
+            <div class="main"> <!-- container for main content -->
+    
+
+<div class="expandable_naration">
+
+	<h2>STEP2 in WLANs</h2>	
+
+	<h4 id="1._Objectives">Objectives</h4>
+	<div>
+	 <p>Our main objective is to realize the implmentation of Self-TunEd Performance and  Protection (STEP2) management system for wireless LANs. Although, the  architecture of STEP2 is generalized in the way that it can be used for any  kind of wireless networks, however, as a case study, we are evaluating STEP2 in  wireless LAN settings. The reason is that wireless LANs are the most popular  kind of wireless network deployed as hot-spots in the real world. Further, we  aim to carry-out experiments in different scenarios, such as under good and  poor links, with multiple clients and mobile clients settings. We plan to  measure different performance parameters such as packet loss and delay in  different scenarios to evaluate the usefulness of STEP2. We hope to setup the  testbed and different scenarios as close to real-time as possible.</p>
+	 <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+
+	<h4 id="2._Architecture">System Description</h4>
+	<div>
+  	<p>The testbed consists of a security policy server behind an access point, and many mobile clients at different locations. The server is setup as a desktop machine, which provides negotiation of security policies for clients in the wireless LANs. The server does not require any changes for implementing STEP2. The clients are laptop computers, and run STEP2 implementation. STEP2 system consists of three modules: a monitor, a decision-maker and a tuner. A brief description of these modules is as follows.</p>
+  	
+  	<h5>STEP2 Modules</h5>
+  	<p><strong><em>Monitor:</em></strong> The monitor module collects statistics such as packet losses and delay over wireless links to measure the channel performance. The monitor module uses unicast probing technique to determine wireless channel performance between the client and the server. The monitor, then, provides the feedback to the decision-maker at regular intervals.</p>
+  	<p><strong><em>Decision-Maker:</em></strong> Whenever the decision-maker module obtains feedback from the monitoring system, it runs an algorithm to determine the decisions regarding the tuning of security policies. The monitor and decision-maker are executed as background processes so that they do not interfere with the ongoing data transmission in a system. The decision-maker sends its decision to the tuner.
+  	</p>
+  	<p><strong><em>Tuner:</em></strong> This module takes care of changing the current security policy if the decision sent by the decision-maker module includes new security policy. Since this module runs in foreground, it adds extra overhead to the ongoing data transmission. However, our implementation ensures to keep the overhead as little as possible.</p>
+	 <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+
+	<h4 id="3._Setup"></a>Setup and Configuration</h4>
+	<div>
+	 <p>The policy server and access point are on the 3rd floor of EB2 building of the campus and are connected over wired ethernet. On the other side, clients are scattered on the 2nd and 3rd floors of the same building. The access point and clients use channel 6, and data rate has been set as 11 Mbps for all clients. The 2nd floor has a campus wireless network, however there is no wireless network on the 3rd floor except some students using their personal mobile devices. This setting helps us in obtaining measurements while having variations in the link connectivity between client and access points. As variations in link connectivity are more during afternoon due to the high flow of students, measurements are taken during afternoon as well as in nights when there are not many variations.</p>
+
+		<h5>1. Security Policies</h5>
+		<p>Currently, the testbed is configured with four IPSec security policies which are IPSec-AES-SHA1, IPSec-AES-MD5, IPSec-3DES-SHA1 and IPSec-3DES-MD5. We use Openswan implementation of IPSec in the testbed, so all details related to IPSec are specific to Openswan. In general, IPSec can be configured in tunnel and transport modes, however we have used tunnel mode configuration as it is considered stronger than the transport mode. IPSec establishes tunnels between two end points, the server and the clients in our testbed, in two phases. In the first phase, called Main Mode, cryptographic keys to be used in the second phase are generated. In the second phase, called Quick Mode, encryption and hashing algorithms are negotiated between the two end points and cryptographic keys are generated to be used for data transmission.</p>
+
+		<h5>2. Hardware Details</h5>
+		<p>The server is Dell PC with Pentium IV (2.6 GHZ). We have used Cisco Access Points (Cisco Aironet 1200 series) to provide wireless connectivity. The mobile clients are Dell Laptop with Celeron Processor (2.4GHZ). In addition, we have used Lucent orinoco gold wireless cards (802.11b) in mobile clients.</p>
+
+		<h5>3. Software Details</h5>
+		<p>All systems run Redhat Linux 9 with kernel version 2.4.20-8. Openswan open source is installed on the server and mobile clients for IPSec functionality. OpenSSL open source software is installed on all systems to be used by IPSec protocol suite. Iperf, Ping and Rude are used for generating different traffics, such as TCP and UDP.</p>
+	 <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+	
+	<h4 id="4._useful_lniks">Useful Links</h4>
+  <div>
+  	<ul>
+  		<li>
+  			<a href="http://www.openswan.org/">Openswan IPSec</a><span style="FONT-WEIGHT: bold"></span>
+  		</li>
+  		<li>
+  			<span style="FONT-WEIGHT: bold"></span><a href="http://www.openssl.org/">OpenSSL</a>
+  		</li>
+  		<li>
+  			<a href="http://www.hping.org/">hping (Another ping utility)</a>
+  		</li>
+  		<li>
+  			<a href="http://dast.nlanr.net/Projects/Iperf/">iPerf (TCP traffic generator)</a>
+  		</li>
+  		<li>
+  			<a href="http://rude.sourceforge.net/">Rude (UDP traffic generator)</a>
+  		</li>
+  		<li>
+  			<a href="http://www.nongnu.org/orinoco/">Orinoco device drivers</a>
+  		</li>
+  	</ul>
+    <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+
+
+	<p>If you have any question, please feel free to contact <a style="FONT-FAMILY: arial" href="http://www4.ncsu.edu/%7Eakagarwa">
+				Avesh Agarwal</a>.<p>
+
+</div>
+      <div class="footer" id="footer">
+        <p class="copyright">Copyright &copy;2025 North Carolina State University. All Right Reserved. Questions? Contact <a href="mailto:wwang@ncsu.edu">Dr. Wenye Wang</a></p>
+      </div>
+        
+      </div> <!-- end .main -->
+
+            <div class="aside aside--left">
+        <div class="menu">
+          <div class="menu__item">  <!-- Menu: Research -->
+
+            <a href="research.php" class="">
+              <div class="circle"><div class="circle__content">
+                <span class="menu-icon" data-icon="&#xe60b;"><br></span><span class="menu-text">Research</span>
+              </div></div>
+            </a>
+
+            <ul class="sub-menu">
+              <li class=""><a href="research.php">Overview</a></li>
+              <li class=""><a href="fundamental_properties.php">Fundamental Properties</a></li>
+              <li class=""><a href="design_optimization.php">Design &amp; Optimization</a></li>
+              <li class=""><a href="system_application.php">Systems &amp; Applications</a></li>
+            </ul>
+
+          </div> <!-- end .menu__item : Research -->
+
+          <div class="menu__item"> <!-- Menu: Publications -->
+            <a href="publications.php" class="">
+              <div class="circle"><div class="circle__content">
+                <span class="menu-icon" data-icon="&#xe608;"><br></span><span class="menu-text">Publications</span>
+              </div></div>
+            </a>
+          </div> <!-- end .menu__item : Publications -->
+
+          <div class="menu__item"> <!-- Menu: Downloads -->
+            <a href="downloads.php" class="on">
+              <div class="circle"><div class="circle__content">
+                <span class="menu-icon" data-icon="&#xe60a;"><br></span><span class="menu-text">Downloads</span>
+              </div></div>
+            </a>
+
+            <ul class="sub-menu">
+              <li class=""><a href="downloads.php">Overview</a></li>
+              <li class=""><a href="mobility_model.php">Mobility Model</a></li>
+              <li class="subon"><a href="step2.php">STEP2 in WLANs</a></li>
+              <li class=""><a href="sensor_networks.php">Sensor Networks</a></li>
+              <li class=""><a href="multihop_networks.php">Multihop Networks</a></li>
+            </ul> 
+
+          </div> <!-- end .menu__item : Downloads -->
+
+          <div class="menu__item"> <!-- Menu: Projects -->
+            <a href="projects.php" class="">
+              <div class="circle"><div class="circle__content">
+                <span class="menu-icon" data-icon="&#xe606;"><br></span><span class="menu-text">Projects</span>
+              </div></div>
+            </a>
+          </div> <!-- end .menu__item : Projects -->
+        </div>
+
+        <div class="services">
+          <h5 data-icon="&#xe609;" class="aside--title"> Recent Activities</h5>
+          <p>2020 - Tutorial Co-Chair, Technical Program Committee,  <a href='http://www.comsoc.org/conferences-events' target='blank'> IEEE ICC 2020</a></p><p>2019 - Area Chair, Technical Program Committee,  <a href='http://infocom2019.ieee-infocom.org/' target='blank'> IEEE INFOCOM</a></p><p>2018 - Area Chair, Technical Program Committee,  <a href='http://infocom2018.ieee-infocom.org/' target='blank'> IEEE INFOCOM</a></p>        </div>
+
+        <a class="more-list" href="acts.php">More activities &#187;</a>
+
+        <div class="side-info side-info--aside">
+                
+
+
+        <div class="logo">
+          <a href="http://www.ece.ncsu.edu/" target="blank" style="font-size: 16px;color:rgb(189,0,0);position:relative;top:15px;right:-5px;">
+            <img src="img/logos/ece.png">
+          </a>&nbsp;
+          <a href="http://www.ncsu.edu/" target="blank">
+            <img src="img/logos/wolfpack1.png">
+          </a>
+        </div>
+
+        <!-- <div class="logo"><a href="http://www.freedm.ncsu.edu/" target="blank"><img src="img/logos/freedm-logo.png"></a></div> -->
+        <!-- <div class="logo"><a href="http://scholar.google.com/scholar?hl=en&q=wenye+wang&btnG=&as_sdt=1%2C34&as_sdtp=" target="blank"><img src="img/logos/Google_Scholar_logo.png"></a></div> -->
+        
+        
+        </div>
+        
+
+      </div> <!-- end .aside--left -->
+
+      <div class="aside aside--right">
+        <h5 data-icon="&#xe609;" class="aside--title">News</h5>
+        <div class="short-news">
+          <h6>August, 2020</h6><p>Congratulations to our team on receiving an NSF award!</p><h6>July, 2020</h6><p>Congratulations on Rui's presentation in IEEE INFOCOM Virtual Meeting!</p>        </div>
+        <a class="more-list" href="news.php">More news &#187;</a>
+        
+        <div class="calendar">
+          <h5 data-icon="&#xe618;" class="aside--title">Our Calendar</h5>
+          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=5vo32v7mr1i2ovdsng1s1gc5rc%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FNew_York" style="border-width:0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
+        </div>   
+      </div> <!-- end .aside--right -->
+  
+    </div> <!-- end .wrapper -->
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Flowtype (http://simplefocus.com/flowtype/) -->
+    <script type="text/javascript" src="js/FlowType/flowtype.js"></script>
+    <!-- NanoGallery (http://nanogallery.brisbois.fr/) -->
+    <script type="text/javascript" src="js/jquery.nanogallery.min.js"></script>
+
+    <!-- Application -->
+    <script src="js/app.js"></script>
+    
+<!--     <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-74320054-1', 'auto');
+      ga('send', 'pageview');
+
+    </script> -->
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-77082106-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>

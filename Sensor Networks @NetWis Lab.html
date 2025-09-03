@@ -1,0 +1,650 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Sensor Networks @NetWis Lab
+    </title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="css/application.css">
+
+    <!-- Latex -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600' rel='stylesheet' type='text/css'>
+
+    <!-- NanoGallery (http://nanogallery.brisbois.fr/) -->
+    <link href="css/nanogallery/nanogallery.min.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+  
+    <!-- Header -->
+    <!-- Professor photos and contact infos, netwis logo, navigation (people, gallery, faqs) -->
+    <div class="header"> 
+      <!-- Professor photos and contact infos -->
+      <div class="header__item header__item--professor">
+        <div id="photo-header">
+          <a href="index.php" class="photo-header--figure">
+            <img src="img/people/wenye1996.jpg">
+            <p>1996 - Beijing</p>
+          </a>
+          <a href="index.php" class="photo-header--figure">
+            <img src="img/people/wenye2016.jpg">
+            <p>2016 - Raleigh</p>
+          </a>
+        </div>
+        <div>
+          <p> 
+            <span id="name-prof">Wenye Wang (王文野)</span><br>
+            <span id="prof">Professor, IEEE Fellow </span><br>
+               Electrical and Computer Engineering<br>
+               NC State University
+          </p>
+          <div class="contact-faculty">
+            <ul>
+              <li><a><span data-icon="&#xe602;"></span> 919-513-2549</a></li>
+              <li><a href="mailto:wwang@ncsu.edu" target="top"><span data-icon="&#xe604;"></span> wwang@ncsu.edu</a></li>
+              <li><a href="https://www.google.com/maps/place/Department+of+Electrical+and+Computer+Engineering/@35.772063,-78.674191,17z/data=!3m1!4b1!4m2!3m1!1s0x89acf59e741b1d09:0x3dff08db302f5df4" target="blank"><span data-icon="&#xe603;"></span> 3056 Engineering Building II, 890 Oval Drive<br></a></li>
+<li><a><span data-icon="&#xe605;"></span> schedule by emails. </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Netwis logo, navigation (people, gallery, faqs) -->
+      <div class="header__item header__item--nav">
+        <ul>
+          <li><a href="index.php" id="logo"><img src="img/logos/netwis2.png" width="100"></a></li>
+          <li><a href="people.php" class="">People</a></li>
+          <li><a href="gallery.php" class="">Gallery</a></li>
+          <li><a href="faqs.php" class="">FAQs</a></li>
+        </ul>
+      </div>
+        
+
+    </div>
+
+   
+    <div class="wrapper"> <!-- container for main content and aside -->
+            <div class="main"> <!-- container for main content -->
+    
+<div class="expandable_naration">
+	<h2>Sensor Networks</h2>
+
+	<p>A Personal INdoor Sensor (PINS) network is a wireless sensor network deployed in-homes or in-buildings to monitor the indoor conditions and the humadaily behavior. Sensor nodes are usually equipped with passive infrared (PIR), temperature, acoustic sensors that can capture unpredictable conditionand behaviors. Nodes communicate via wireless links in a multi-hop fashion. Placement/orientation of these sensor nodes should be carefully designeto sense entire field of interest.</p>
+
+	<h4 id="objectives">Objectives</h4>
+	<div>
+	 <p>Indoor environments have several challenges in terms of wireless communication and sensing. In this research, our objective is to investigate thproperties of indoor environments for wireless sensor networks. This would be veruseful since home itself is like a living organism. Furniture might move, peoplmight start to emit noise at certain hours, heat can change etc. Further, transmission and sensing coverage in indoor environments should be studieby an experimental study to capture the irregularity due to many obstaclesWe will further implement and test our algorithms to improve the reliable communication and event detection for several applications. </p>
+	 <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+
+	<h4 id="potential_applications">Potential Applications</h4>
+	<div>
+  	<p>PINS network composed of PIR supported motes can be used in variety of office (workplace) and home applications. Similar to the context-aware ho projects, PINS network can easily be deployed for human tracking for health car daily life monitoring, energy management (light, A/C turn on/off) etc. In such applications, benefits of PINS&nbsp; would be summarized as follows:</p>
+
+  	<ul>
+  		<li>adaptable to existing building with minor construction and maintenance</li>
+  		<li>low-cost</li>
+  		<li>ubiquitous</li>
+  		<li>customizable based on the life style (workplace, home for elder people, children house, etc.)</li>
+  		<li>can be improved to act as an emergency system</li>
+  	</ul>
+
+  	<p>An example monitoring application of PINS is<span style="FONT-STYLE: italic">exhibition monitoring</span>. Especiallin art exhibitions, it is very helpful to have the statistics of the numbeof visitors per each painting. Using a PINS network, sensor nodes that arplaced to monitor each painting may detect each visitor in front of the paintinand inform the base station in multi-hop fashion. Such information is alsvery critical from the designer point of view working on the visibility of each painting. We placed the sensors to detect the number of visitors for our research posters as shown below.</p>
+
+  	<div style="text-align:center;"><img alt="PINS exhibition monitoring" src="img/pir_app.jpg" height="289" width="656" style="float:none;"/></div>
+	  <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+
+	<h4 id="PINS_network_setup">PINS Network Setup</h4>
+	<div>
+	  <p>For our testbed, we have deployed 18 Tmotes to our lab. Some of our Tmotes have PIR sensors visually (or virtually) tracking the people's daily interaction with their habitat and monitoring the indoor conditions. To track the people in an indoor environment, we use PIR sensors.&nbsp; Detailed explanation on our experiments and findings will be available soon.</p>
+  	
+    <table style="WIDTH: 100%; TEXT-ALIGN: left" border="1" cellpadding="2" cellspacing="2">
+  		<tbody>
+  			<tr>
+  				<td><img alt="Timote Sky" src="img/tmote2%20002.jpg" style="LEFT: 269px; WIDTH: 256px; TOP: 1413px; HEIGHT: 185px" /></td>
+  				<td>Here are the&nbsp; documents we used to configure <a href="http://www.moteiv.com/products/tmotesky.php">Tmote Sky</a>.
+            <ul>
+  						<li><a href="img/tmote-sky-datasheet.pdf">Moteiv Tmote Sky Datasheet (2006)</a> </li>
+  						<li><a href="img/tmote-sky-quickstart.pdf">Moteiv Tmote Sky Quick start guide (2006)</a> </li>
+  					</ul>
+  					We have installed <a href="http://www.moteiv.com/software/"> Boomerang</a> 2.0.4 software which is fully compatible with existing TinyOS 1.x application. Boomerang is a complete setup that installs the Tnote development tools (TinyOS 1.x, Java 1.5 JDK, nesC, cygwin (for windows), Graphviz, etc.), USB driver to access Tmote as a virtual COM port, and motiv's networking application tools.
+  				</td>
+  			</tr>
+  		</tbody>
+  	</table>
+
+		
+  	<h5>1. PIR Sensor</h5>
+  	<p>For motion detection, we connect a passive infrared (PIR) motion sensor to Tmote Sky. PIR sensor detects changes in infrared radiation which occur when there is movement by a person (or object) which is different in temperature from the surroundings. As sensor detects temperature differences, it is well suited to detecting the motion of people by their body temperature. We have configured an <span style="FONT-WEIGHT: bold">analog </span>(Parallax #555-28027) and a <span style="FONT-WEIGHT: bold">digital </span>(Panasonic AMN44121) sensorfor our testbed.</p>
+
+  	<table style="WIDTH: 100%;" cellpadding="2" cellspacing="2">
+  		<tbody>
+  			<tr>
+  				<td>
+            <div style="text-align: center; margin-bottom: 15px;">
+              <img alt="Parallax analog sensor" src="img/555-28027.gif" style="WIDTH: 127px; HEIGHT: 97px; float: none;"/><br>						 Parallax (#555-28027) (~6m&nbsp; range)
+            </div>
+  					<div style="text-align: center;">		
+              <img alt="Panasonic digital sensor" src="img/pir.jpg" style="WIDTH: 120px; HEIGHT: 104px; float: none;" /><br />
+  								Panasonic AMN44121(~10m range)
+  					</div>
+          </td>
+  				<td>
+            <img alt="sensor coverage " src="img/coverage.jpg" style="WIDTH: 432px; HEIGHT: 262px" /><br />
+  				</td>
+  			</tr>
+  		</tbody>
+  	</table>
+  			
+  	<h6>1.1 Connecting Analog</h6>
+  	<table style="width: 100%;" border="0" cellpadding="2" cellspacing="2">
+  		<tbody>
+  			<tr>
+  				<td>
+            <img alt="Analog PIR Sensor" src="img/apir.JPG" style="WIDTH: 249px; HEIGHT: 179px" />
+          </td>
+  				<td>
+            To connect an <span style="FONT-WEIGHT: bold">external analog sensor</span> to Tmote we use the 10-pin expansion connector on tmote board. We connect our PIR sensor output to expansion <span style="TEXT-DECORATION: underline">pin 3 (ADC0</span>).<br><br>
+
+  						
+  				  <span class="code">TOS_ADC_PIR_PORT = unique("ADCPort"),<br />
+  						TOSH_ACTUAL_ADC_PIR_PORT = ASSOCIATE_ADC_CHANNEL(<br />
+  						  &nbsp;&nbsp;&nbsp;&nbsp; INPUT_CHANNEL_A0,<br />
+  						  &nbsp;&nbsp;&nbsp;&nbsp; REFERENCE_VREFplus_AVss,<br />
+  						  &nbsp;&nbsp;&nbsp;&nbsp; REFVOLT_LEVEL_2_5)</span>
+          </td>
+  			</tr>
+  		</tbody>
+  	</table>
+		
+
+		<table style="WIDTH: 554px; FONT-FAMILY: courier new,courier,monospace; HEIGHT: 620px; BACKGROUND-COLOR: rgb(255,255,153); TEXT-ALIGN: left"
+			border="0" cellpadding="2" cellspacing="2">
+			<tbody>
+				<tr>
+					<td>configuration AnalogPIRSendC {<br />
+								}<br />
+								implementation {<br />
+								&nbsp;&nbsp;&nbsp; ...&nbsp;
+								<br />
+								&nbsp;&nbsp;&nbsp; components ADCC;<br />
+								<br />
+								&nbsp; &nbsp; Main.StdControl -&gt; AnalogPIRSendP;<br />
+								&nbsp; &nbsp; Main.StdControl -&gt; ADCC;<br />
+								&nbsp; &nbsp; AnalogPIRSendP.CommControl -&gt; Comm;<br />
+								&nbsp; &nbsp; AnalogPIRSendP.SendMsg -&gt; Comm.SendMsg[AM_OSCOPEMSG];<br />
+								&nbsp; &nbsp; ...
+								<br />
+								&nbsp; &nbsp; AnalogPIRSendP.ADC -&gt; ADCC.ADC[TOS_ADC_PIR_PORT];<br />
+								&nbsp; &nbsp; AnalogPIRSendP.ADCControl -&gt; ADCC;<br />
+								<br />
+								}<br />
+								<br />
+								implementation<br />
+								{<br />
+								&nbsp; ...<br />
+								<br />
+							event result_t Timer.fired() {<br />
+								&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; return call ADC.getData();<br />
+								&nbsp;}<br />
+								&nbsp; 
+								<br />
+								async event result_t
+ADC.dataReady( uint16_t data ){<br />
+								&nbsp;&nbsp;&nbsp; struct
+OscopeMsg *pack;<br />
+								&nbsp;&nbsp;&nbsp; atomic{<br />
+								&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; pack = (struct OscopeMsg *)msg[currentMsg].data;<br />
+								&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp; pack-&gt;data[packetReadingNumber++] = data;<br />
+								&nbsp; &nbsp; &nbsp; &nbsp;
+readingNumber++;<br />
+								&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp; ...<br />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+if (packetReadingNumber == BUFFER_SIZE) post dataTask();<br />
+								&nbsp; &nbsp;&nbsp; }<br />
+								&nbsp;&nbsp;&nbsp; m_int =
+data;<br />
+								&nbsp;&nbsp;&nbsp; return
+SUCCESS;<br />
+								<br />
+								<br />
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		
+
+
+		
+  	<h6>1.2 Connecting Digital PIR Sensor to Tmote</h6>
+  	<table style="LEFT: 252px; TOP: 3324px; TEXT-ALIGN: left" border="0" cellpadding="2" cellspacing="2">
+  		<tbody>
+  			<tr>
+  				<td><img alt="Tmote external digital sensor" src="img/tmote.jpg" style="WIDTH: 273px; HEIGHT: 204px" /></td>
+  				<td>
+            To use the <span style="FONT-WEIGHT: bold">external digital sensor</span> in Tmote we connect our PIR sensor output to&nbsp; expansion <span style="TEXT-DECORATION: underline">pin 7 (GIO1</span>). Since PIR (AMN44121) is low current consumption <span style="FONT-WEIGHT: bold">(digital output)</span>, 10 m detection, 3V DC type, we used one of the exclusive digital I/O port. One important detail, specified in the datasheet is that:<br />
+             <br />
+             &nbsp;-- If expansion pin 7 or 10 is used for digital I/O instead of analog inputs, R16/R14 must be populated with a 0 ohm resistor to enable GIO1/GIO0.
+          </td>
+  			</tr>
+  		</tbody>
+  	</table>
+  		
+    <div style="text-align: center;">
+      <img alt="Pin Expansion" src="img/expansion2.JPG" style="WIDTH: 420px; HEIGHT: 187px;float: none"/>
+      <img alt="Pin Expansion" src="img/expansion.jpg" style="WIDTH: 399px; HEIGHT: 194px;float: none" />
+    </div>
+	
+		
+
+
+
+	  <p>After we connected the  PIR sensor to the digital I/O pin 1, we use <span style="FONT-STYLE: italic">MSP430GeneralIO</span> interface to get the output from sensor. An important detail is that GIO1 is  designed to have interrupt capability. Thus, we catch up the motion by the  voltage change in the output of PIR sensor triggers an interrupt. Here is some  useful information to get output using GIO1.</p>
+
+
+		<ul>
+			
+				<li>
+					<span style="FONT-FAMILY: courier new,courier,monospace">use
+	TOSH_MAKE_GIO0_INPUT();</span>
+				</li>
+				<li>
+					
+					<pre>wire ReadPIRP.PIR -&gt; MSP430GeneralIOC.Port21; <br />     ReadPIRP.PIRInput -&gt; MSP430InterruptC.Port21;</pre>
+					
+				</li>
+				<li>
+					<pre>set ADC2 as input by putting the macros TOSH_MAKE_ADC3_INPUT(); (output by default<span style="FONT-FAMILY: monospace">)</span></pre>
+			</li>
+		</ul>
+
+
+		<table style="WIDTH: 391px; HEIGHT: 396px; BACKGROUND-COLOR: rgb(255,255,153); TEXT-ALIGN: left; FONT-FAMILY: courier new,courier,monospace"
+			border="0" cellpadding="2" cellspacing="2">
+			<tbody>
+				<tr>
+					<td>components 
+									Main;<br />
+									components ReadPIRP;<br />
+									components MSP430GeneralIOC;<br />
+									components MSP430InterruptC;<br />
+									...<br />
+									<br />
+									Main.StdControl -&gt; ReadPIRP;<br />
+									ReadPIRP.PIR -&gt; MSP430GeneralIOC.Port21;
+									<br />
+									ReadPIRP.PIRInput -&gt; MSP430InterruptC.Port21<br />
+									<br />
+									module
+	ReadPIRP {<br />
+									&nbsp;
+	provides interface StdControl;<br />
+									&nbsp;
+	uses interface Leds;<br />
+									&nbsp;
+	uses interface MSP430GeneralIO as PIR;<br />
+									&nbsp;
+	uses interface MSP430Interrupt as PIRInput;<br />
+									}<br />
+									command
+	result_t StdControl.init() {<br />
+									&nbsp;&nbsp;&nbsp;
+	TOSH_MAKE_ADC2_INPUT();<br />
+									&nbsp;&nbsp;&nbsp;
+	TOSH_MAKE_GIO1_INPUT(); <br />
+									&nbsp;&nbsp;&nbsp;
+	return SUCCESS;<br />
+									&nbsp; }<br />
+									async
+	event void PIRInput.fired(){<br />
+									&nbsp;....<br />
+									}
+									<br />
+									</td>
+				</tr>
+			</tbody>
+		</table>
+		
+  	<h6>1.3 Digital versus Analog PIR</h6>			
+  	<p>After configuring analog and the digital sensors, we decide to extend our test-bed using analog PIR sensors.</span> A comparison will be available between analog and digital PIR&nbsp; in terms of&nbsp; computability to Telos.	</p>		
+    <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+
+	<h4 id="4._Technical_Documents">Technical Documents</h4>
+	<div>
+  	<ul>
+  		<li>
+  			<a href="file:///K:/locker/WSN-testbed-Project/pins/doc/tmote-sky-datasheet.pdf">Moteiv Tmote Sky Datasheet (2006)</a> 
+  		</li>
+  		<li>
+  			<a href="file:///K:/locker/WSN-testbed-Project/pins/doc/tmote-sky-quickstart.pdf">Moteiv Tmote Sky Quick start guide (2006)</a> 
+  		</li>
+  		<li>
+  			<a href="file:///K:/locker/WSN-testbed-Project/pins/pewa.panasonic.com/pcsd/product/sens/pdf/amn.pdf">Digital PIR sensor specification</a> 
+  		</li>
+  		<li>
+  			<a href="http://www.parallax.com/dl/docs/prod/audiovis/PIRSensor-V1.2.pdf">Analog PIR sensor specification</a><br />
+  		</li>
+  	</ul>
+	  <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+
+					
+	<a name="5._An_example_Application"></a>
+	<h4>An Example Application and Initial Results</h4>
+	<div>
+	  <p>Application specific configuration and results will be available soon.</p>
+	  <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+
+	<h4 id="6._Related_Publications_"></a>Related Publications</h4>
+	<div>
+  	<h5>1. Health-Care Applications of Wireless Sensor Networks</h5>
+  	<ul>
+  		<li>
+  			<a href="http://www.dh.aist.go.jp/%7Eynishida/papers/ICEIS2005.pdf">Ultrasonic Sensors for the Elderly and Caregivers in a Nursing Home</a>, Toshio Hori, Yoshifumi Nishida, ICEIS, 2005.
+  		</li>
+  		<li>
+  			<a href="http://www.cs.virginia.edu/papers/wlsn_health_HCMDSS05.pdf">Wireless Sensor Networks for In-Home Healthcare: Potential and Challenges</a>, J. A. Stankovic, Q. Cao, T. Doan, L. Fang, Z. He, R. Kiran, S. Lin, S. Son, R. Stoleru, A. Wood, HCMDSS, 2005.
+  		</li>
+  		<li>
+  			<a href="http://seattleweb.intel-research.net/people/matthai/pubs/debull06.pdf">Towards Activity Databases: Using Sensors and Statistical Models to Summarize People's Lives</a>, Tanzeem Choudhury, Matthai Philipose, Danny Wyatt, Jonathan Lester, Data Engineering Bulletin, 2006.
+  		</li>
+  		<li>
+  			<a href="http://www.eecs.harvard.edu/%7Emdw/papers/codeblue-techrept05.pdf">Sensor 
+  				Networks for Medical Care</a>, Victor Shnayder, Borrong, Chen, Konrad 
+  		Lorincz, Thaddeus R. F. FulfordJones, and Matt Welsh, Tech. Report, Harvard 
+  		University, 2005.
+  		</li>
+  		<li>
+  			<a href="http://ieeexplore.ieee.org/iel5/2/28841/01297237.pdf?arnumber=1297237">Inventing 
+  				Wellness Systems for Aging-in-Place</a>, Eric Dishman, Intel Research, 
+  		2004.
+  		</li>
+  		<li>
+  			<a href="http://www.eecs.harvard.edu/%7Emdw/papers/monitoring-icicth05.pdf">Improving 
+  				Patient Monitoring and Tracking in Emergency Response</a>, Tia Gao, Dan 
+  			Greenspan, and Matt Welsh. In <em style="FONT-FAMILY: Helvetica,Arial,sans-serif">Proceedings 
+  				of the International Conference on Information Communication Technologies in 
+  				Health</em><span style="FONT-FAMILY: Helvetica,Arial,sans-serif">,
+  	July 2005.</span>
+  		</li>
+  		<li>
+  			<a style="FONT-FAMILY: Helvetica,Arial,sans-serif" href="http://www.mobiquitous.org/2005/Hou.pdf">
+  				Use of Wireless Technologies for Assisted Living at Home</a><span style="FONT-FAMILY: Helvetica,Arial,sans-serif">, Mobiquitous 2005</span>.
+  		</li>
+  		<li>
+  			<a href="http://www.napa.ufl.edu/2003news/smarthouse.htm">
+  							UF SMART HOME DEMONSTRATES CONCEPT OF AUTOMATED ELDERLY HELP AND CARE.</a>
+  	</li>
+  	</ul>
+
+  	<h5>2. In-door, Home Wireless Sensor Networks</h5>
+  	<ul>
+  		<li>
+  			<a href="http://www.pittsburgh.intel-research.net/%7Ekpapagia/papers/homenet.pdf">Experimental 
+  				Characterization of Home Wireless Networks and Design Implications</a>, K. Papagiannaki, M. Yarvis, and W. S. Conner, in <i>IEEE Infocom</i>, Barcelona, Spain, April, 2006.
+  		</li>
+  		<li>
+  			<a href="http://crpit.com/confpapers/CRPITV21WMeyer.pdf">A Survey of Research on Context-Aware Homes</a>, Sven Meyer and Andry Rakotonirainy, WICAPUC, 2003.
+  		</li>
+  		<li>
+  			<a href="http://www.cs.toronto.edu/%7Etomhart/papers/secon.pdf">Simplified Simulation Models for Indoor MANET Evaluation are not Robust</a>, Andres Lagar Cavilla, Gerard Baron, Thomas E. Hart,Lionel Litty and Eyal de Lara, Secon 2004.
+  	  </li>
+  	</ul>
+
+  	<h5>3. Other Experimental Studies for Wireless Sensor Networks</h5>
+  	<ul>
+  	  <li>
+  	  	<a href="http://www.cs.virginia.edu/papers/tracking-mobisys04.pdf">Energy-Efficient Surveillance System Using Wireless Sensor Networks</a>, Tian He, Sudha Krishnamurthy, John A. Stankovic, Tarek Abdelzaher, Liqian Luo, Radu Stoleru, Ting Yan, Lin Gu, MobiSys, 2004.
+  	  </li>
+  	  <li>
+  	  	<a href="http://lecs.cs.ucla.edu/%7Edeepak/PAPERS/empirical.pdf">Complex Behavior at Scale: An Experimental Study of Low-Power Wireless Sensor Networks</a>, Deepak Ganesany, Deborah Estrin, Alec Woo, David Culler, Tech. Report, UCLA, 2002.
+  	  </li>
+  	  <li>
+  	  	<a href="http://ieeexplore.ieee.org/iel5/10355/32951/01542773.pdf?arnumber=1542773">An Experimental Study of Routing and Data Aggregation in Sensor Networks</a>, Ossama Younis, Sonia Fahmy, MASS 2005.
+  	  </li>
+  	  <li>
+  	  	<a href="http://www.cs.virginia.edu/%7Estankovic/psfiles/f103-gu.pdf">Lightweight Detection and Classification for Wireless Sensor Networks in Realistic Environments</a>, Lin Gu, Dong Jia, Pascal Vicaire, Ting Yan, Liqian Luo, Ajay Tirumala, Qing Cao, Tian He, John A. Stankovic, Tarek Abdelzaher, Bruce H. Krogh, SenSys, 2004.
+  	  </li>
+  	  <li>
+  	  	<a href="http://delivery.acm.org/10.1145/950000/941357/p38-conner.pdf?key1=941357&amp;key2=7536854711&amp;coll=&amp;dl=ACM&amp;CFID=15151515&amp;CFTOKEN=6184618">Experimental Evaluation of Synchronization and Topology Control for In-Building Sensor Network Applications</a>, W. Steven Conner, Jasmeet Chhabra, Mark Yarvis, Lakshman Krishnamurthy, WSNA, 2003.
+  	  </li>
+  	  <li>
+  	  	<a href="http://www.isi.edu/div7/publication_files/Son04a.pdf">Experimental study of the effects of Transmission Power Control and Blacklisting in Wireless Sensor Networks</a>, Dongjin Son, Bhaskar Krishnamachari, and John Heidemann, Secon 2004.
+  	  </li>
+  	  <li>
+  	  	<a href="http://www.isi.edu/%7Ejohnh/PAPERS/Son06a.pdf">Experimental Study of Concurrent Transmission in Wireless Sensor Networks</a>, Dongjin Son, Bhaskar Krishnamachari, John Heidemann, SenSys 2006.
+  	  </li>
+  	  <li>
+  	  	<a href="http://www.cs.virginia.edu/wsn/vigilnet/paper/VigilNet-TOSN.pdf">VigilNet: An Integrated Sensor Network System for Energy-Efficient Surveillance</a>, Tian He, Sudha Krishnamurthy, John A. Stankovic, Tarek Abdelzaher, Liqian Luo, Radu Stoleru, Ting Yan, Lin Gu, TOSN, 2006.
+  	  </li>
+  	  <li>
+  	  	<a href="http://www.cs.colorado.edu/%7Erhan/Papers/p28-hartung.pdf">FireWxNet: A MultiTiered Portable Wireless System for Monitoring Weather Conditions in Wildland Fire Environments</a>, ACM MobiSys 2006.
+  	  </li>
+  	  <li>
+  	  	<a href="http://enl.usc.edu/papers/cache/Zhao03.pdf">Understanding &nbsp;packet delivery performance in dense wireless sensor networks</a>, J. Zhao and R. Govindan,&nbsp; in Proc. of ACM Conference on Embedded Networked Sensor Systems (SenSys), Los Angeles, CA, Nov. 2003. 	
+  	  </li>
+  	</ul>
+	  <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+
+	<h4 id="7._Useful_Links">Useful Links</h4>	
+	<div>
+  	<ul>
+  		<li>
+  			<a href="http://www.tinyos.net/">TinyOS 
+  					website (Includings documentation, mailing lists, etc.)</a>
+  		</li>
+  		<li>
+  			<a href="http://csl.stanford.edu/%7Epal/pubs/tinyos-programming.pdf">TinyOS Programming Tutorial</a>
+  		</li>
+  		<li>
+  			<a href="http://www.cse.wustl.edu/%7Eliang/tinyos-install/windows/index.html">TinyOS Windows Installation Guide</a>
+  		</li>
+  		<li>
+  			<a href="http://www.5secondfuse.com/tinyos/install.html">TinyOS installation for Moteiv's Tmote Sky</a>
+  		</li>
+  		<li>
+  			<a href="http://pes211214.levels.unisa.edu.au/%7Eproj2004y07/User%20Manual/new_page_2.htm">TinyOS installation</a>
+  	  </li>
+  	</ul>
+	  <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+	
+	<p>If you have any question, please feel free to contact <a href="http://www4.ncsu.edu/%7Entezcan">Nurcan Tezcan</a> or Kaseima Frye. </p>
+</div>		
+     <div class="footer" id="footer">
+        <p class="copyright">Copyright ©2022 North Carolina State University. All Right Reserved. Questions? Contact <a href="mailto:wwang@ncsu.edu">Dr. Wenye Wang</a></p>
+      </div>
+        
+      </div> <!-- end .main -->
+
+            <div class="aside aside--left">
+        <div class="menu">
+          <div class="menu__item" style="position: relative; top: 0px; left: 0px;">  <!-- Menu: Research -->
+
+            <a href="research.html" class="">
+              <div class="circle"><div class="circle__content">
+                <span class="menu-icon" data-icon=""><br></span><span class="menu-text">Research</span>
+              </div></div>
+            </a>
+
+            <ul class="sub-menu">
+              <li class=""><a href="research.html">Overview</a></li>
+              <li class=""><a href="fundamentalproperties.html">Fundamental Properties</a></li>
+              <li class=""><a href="Design & Optimization @NetWis Lab.html">Design &amp; Optimization</a></li>
+              <li class=""><a href="Systems & Applications @NetWis Lab.html">Systems &amp; Applications</a></li>
+            </ul>
+
+          </div> <!-- end .menu__item : Research -->
+
+          <div class="menu__item" style="position: relative; top: -54.1667px; left: 65.16px;"> <!-- Menu: Publications -->
+            <a href="publications.html" class="">
+              <div class="circle"><div class="circle__content">
+                <span class="menu-icon" data-icon=""><br></span><span class="menu-text">Publications</span>
+              </div></div>
+            </a>
+          </div> <!-- end .menu__item : Publications -->
+
+          <div class="menu__item" style="position: relative; top: -108.333px; left: 0px;"> <!-- Menu: Downloads -->
+            <a href="https://research.ece.ncsu.edu/netwis2/downloads.php" class="">
+              <div class="circle"><div class="circle__content">
+                <span class="menu-icon" data-icon=""><br></span><span class="menu-text">Downloads</span>
+              </div></div>
+            </a>
+
+            <ul class="sub-menu">
+              <li class=""><a href="downloads.html">Overview</a></li>
+              <li class=""><a href="Mobility Model @NetWis Lab.html">Mobility Model</a></li>
+              <li class=""><a href="STEP2 in WLANs @NetWis Lab.html">STEP2 in WLANs</a></li>
+              <li class=""><a href="Sensor Networks @NetWis Lab.html">Sensor Networks</a></li>
+              <li class=""><a href="Multihop Networks @NetWis Lab.html">Multihop Networks</a></li>
+            </ul> 
+
+          </div> <!-- end .menu__item : Downloads -->
+
+          <div class="menu__item" style="position: relative; top: -162.5px; left: 65.16px;"> <!-- Menu: Projects -->
+            <a href="projects.html" class="">
+              <div class="circle"><div class="circle__content">
+                <span class="menu-icon" data-icon=""><br></span><span class="menu-text">Projects</span>
+              </div></div>
+            </a>
+          </div> <!-- end .menu__item : Projects -->
+        </div>
+
+        <div class="services">
+          <h5 data-icon="" class="aside--title"> Recent Activities</h5>
+          <p>2020 - Tutorial Co-Chair, Technical Program Committee,  <a href="http://www.comsoc.org/conferences-events" target="blank"> IEEE ICC 2020</a></p><p>2019 - Area Chair, Technical Program Committee,  <a href="http://infocom2019.ieee-infocom.org/" target="blank"> IEEE INFOCOM</a></p><p>2018 - Area Chair, Technical Program Committee,  <a href="http://infocom2018.ieee-infocom.org/" target="blank"> IEEE INFOCOM</a></p>        </div>
+
+        <a class="more-list" href="Activities @NetWis Lab.html">More activities »</a>
+
+        <div class="side-info side-info--aside">
+                
+
+
+        <div class="logo">
+          <a href="http://www.ece.ncsu.edu/" target="blank" style="font-size: 16px;color:rgb(189,0,0);position:relative;top:15px;right:-5px;">
+            <img src="22-07NetWis%20Lab_files/ece.png">
+          </a>&nbsp;
+          <a href="http://www.ncsu.edu/" target="blank">
+            <img src="22-07NetWis%20Lab_files/wolfpack1.png">
+          </a>
+        </div>
+
+        <!-- <div class="logo"><a href="http://www.freedm.ncsu.edu/" target="blank"><img src="img/logos/freedm-logo.png"></a></div> -->
+        <!-- <div class="logo"><a href="http://scholar.google.com/scholar?hl=en&q=wenye+wang&btnG=&as_sdt=1%2C34&as_sdtp=" target="blank"><img src="img/logos/Google_Scholar_logo.png"></a></div> -->
+        
+        
+        </div>
+        
+
+      </div> <!-- end .aside--left -->
+
+      <div class="aside aside--right">
+        <h5 data-icon="" class="aside--title">News</h5>
+        <div class="short-news">
+          <h6>August, 2020</h6><p>Congratulations to our team on receiving an NSF award!</p><h6>July, 2020</h6><p>Congratulations on Rui's presentation in IEEE INFOCOM Virtual Meeting!</p>        </div>
+        <a class="more-list" href="22-07News @NetWis Lab.html">More news »</a>
+        
+        <div class="calendar">
+          <h5 data-icon="" class="aside--title">Our Calendar</h5>
+          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=5vo32v7mr1i2ovdsng1s1gc5rc%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FNew_York" style="border-width:0" scrolling="no" width="400" height="300" frameborder="0"></iframe>
+        </div>   
+      </div> <!-- end .aside--right -->
+  
+    </div> <!-- end .wrapper -->
+
+    <!-- Jquery -->
+    <script async="" src="22-07NetWis%20Lab_files/analytics.js"></script><script src="22-07NetWis%20Lab_files/jquery.min.js"></script><link rel="stylesheet" type="text/css" href="22-07NetWis%20Lab_files/s3downbar.css"><link rel="stylesheet" type="text/css" href="22-07NetWis%20Lab_files/contextmenu.css"><link rel="stylesheet" type="text/css" href="22-07NetWis%20Lab_files/tooltip.css"><div id="s3downbar-ibmbeeacmbeeaebmfjpmnlgkhoejinha" style="box-sizing: initial !important; position: fixed; white-space: nowrap; width: 100% !important; left: 0px; bottom: 0px; border-top: 1px solid rgb(153, 153, 153); transform-origin: left bottom 0px; z-index: 2147483647; margin: 0px; padding: 2px 0px; background-color: rgb(238, 238, 238); color: rgb(34, 34, 34); display: flex !important; transform: scale(1) !important;"><style type="text/css" media="print">#s3downbar-ibmbeeacmbeeaebmfjpmnlgkhoejinha { display: none !important; }</style><div style="box-sizing: initial !important; position: absolute !important;" id="s3downbar_resize_pane" is_top="false"><div style="box-sizing: initial !important;" class="tooltip_box" is_top="false"></div><div style="box-sizing: initial !important;" class="tooltip_arrow" is_top="false"></div></div><div style="box-sizing: initial !important; color: rgb(34, 34, 34) !important; position: relative !important; order: 4 !important;" class="s3dmBox" id="s3downbar_hide_button" is_hidden="false"><div id="s3downbar_hide_button_img" style="box-sizing: initial !important; background-image: url(&quot;moz-extension://fd55d796-fe44-8d4a-8a2c-a5a50045c775/skin/s3dm_icons.png&quot;) !important; display: inline-block !important;"></div><div style="box-sizing: initial !important;" class="tooltip_box" is_top="false"><div style="box-sizing: initial !important;" class="tooltipText">Hide Download Bar</div><div style="box-sizing: initial !important;" class="tooltipText">Ctrl + Shift + Z = Show/Hide Download Bar</div></div><div style="box-sizing: initial !important;" class="tooltip_arrow" is_top="false"></div></div><div style="box-sizing: initial !important; color: rgb(34, 34, 34) !important; position: relative !important;" class="s3dmBox" id="s3downbar_main_menu_button" is_hidden="false"><img style="box-sizing: initial !important;" src="22-07NetWis%20Lab_files/logo16.png"><span style="box-sizing: initial !important;">Downloads</span><div style="box-sizing: initial !important;" class="tooltip_box" is_top="false"><div style="box-sizing: initial !important;" class="tooltipText">Download Manager (S3)</div></div><div style="box-sizing: initial !important;" class="tooltip_arrow" is_top="false"></div></div><div style="box-sizing: initial !important; color: rgb(34, 34, 34) !important; position: relative !important; order: 2 !important;" class="s3dmBox" id="s3downbar_clear_button" is_hidden="false">Clear<div style="box-sizing: initial !important;" class="tooltip_box" is_top="false"><div style="box-sizing: initial !important;" class="tooltipText">Left Click: Clear All Finished</div><div style="box-sizing: initial !important;" class="tooltipText">Right Click: Undo last clear</div></div><div style="box-sizing: initial !important;" class="tooltip_arrow" is_top="false"></div></div><div style="box-sizing: initial !important; color: rgb(34, 34, 34) !important; position: relative !important; order: 1 !important;" class="s3dmBox" id="s3downbar_holder_summary_progress" is_hidden="false"><div style="box-sizing: initial !important;">0%</div><div style="box-sizing: initial !important;" class="tooltip_box" is_top="false"><div style="box-sizing: initial !important;" class="tooltipText">Download History</div></div><div style="box-sizing: initial !important;" class="tooltip_arrow" is_top="false"></div></div><div style="box-sizing: initial !important;" id="s3downbar_download_data_listbox"><div style="box-sizing: initial !important; max-height: 69px !important;" id="s3downbar_download_data_listbox_scroll" list_count="1"><div style="box-sizing: initial !important;" id="s3downbar_download_data_list_empty">Download list is empty</div><div id="s3db_D3D9446802A44259755D38E6D163E820" class="download_data_box db_progressStack" style="background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) !important;" click_handle="progress_click_handle">
+		<div class="download_data_box_iframe_box"><div id="s3downbar_download_box_iframe" is_hidden="true" class="download_data_box_iframe"></div></div>
+		<div id="s3downbar_download_box_progressremainder" class="download_data_box_progressremainder" is_hidden="false"></div>
+		<div id="s3downbar_download_box_progress" class="download_data_box_progress" style="background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) !important;" is_hidden="false"></div>
+		<div id="s3downbar_download_box_data" class="download_data_box_data">
+			<img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" id="s3downbar_download_box_img" class="download_data_box_img" style="background: rgba(0, 0, 0, 0) url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAChklEQVQ4T42TX0hTURzHv9e7u3uXm5vLWpiFM9OZSZT5YEFEGOGDEJRYkHNLLXqwP9BDT/UoPdRLxQhy/4iUzMp6kEA08MEoxGIsRUTMPyVLnX/Zvd7t3M5GW24aeM7D4XzPj8/v+/udcxj8HcXmGmu6Zkd5fB9fiUKQwQtTPV8fPqCamHrOxIWjRdeehUKz9akBCghyjDkwm0p7nnZZz9Pz4PqYBOBI4ZUWUZq7nAqI7jVqNRoqmtHte9fd0Xe9mkoL8bh1gMaWkLgZQAGDCJrrXmJkagSfx3o72z/euBAvJwE4vL++JfQfB5GIhFUxAI7lsE1jhMAZ7gyOvrgfdfEPkG+lDoIbSrh9k6DAAjReBZTopE3lOK3z+49XsX4lAIfyLjlFKWjPVBNUHpzHr1UtBqc59HeJYHQatHrDcHh5BGYVCHym69vY81iyBKAk96JTWluwPyqbQ0X5JGZUegz03EOOWYGltg1C1jK+DKhReysNvNrg8o23pgD2VrtEedHmPzkPtngFzD6CoHgAvW1OlDfcRXauD0SjhuU0Q3ugd/sm2u1JDor3nHNJa4u2oRICVfYcXpNq9Mt2GIkWJ/IdOH6sE0QnoLCGpQ70bv9kRwpg91nqYMn2RmdCSd40xvUGeMUqpLMq2C0eGM2LmAhsx6nHhDrIcPun3yYDirKr3JK8VFdG9HAYdDCYAmDSJUCQodDGrig6NA0T9P2OgOcyPEM/39uSSrDsqnRL4ZW6qFhKIU1pWSgQwmDYMEYlBU9IEJ9IKPYAeZXWMzzTtQHgkeRl62ZPOVXjOZ2XAmLJEtdYsPOMJ41htwQgSsQ7EviQDICAPC7CGbbiQGblBfqxx6KxfwAr8PURIP8olwAAAABJRU5ErkJggg==&quot;) no-repeat scroll 50% 50% / contain !important;" no_image="false" is_hidden="true">
+			<img src="" id="s3downbar_download_box_img_queue" class="download_data_box_img" is_hidden="true">
+			<img src="" id="s3downbar_download_box_picToShrink" pictoshrink="true" is_hidden="true" class="download_data_box_img">
+			<div id="s3downbar_download_box_filename" class="download_data_box_filename">22-07NetWis Lab.html</div>
+			<div id="s3downbar_download_box_progress_data" class="download_data_box_progress_data" is_hidden="false">
+				<div id="s3downbar_download_box_progress_percent" class="download_data_box_progress_percent" is_hidden="true">Unk.</div>
+				<div id="s3downbar_download_box_progress_remaintime" class="download_data_box_progress_remaintime" is_hidden="false">Unk.</div>
+				<div id="s3downbar_download_box_progress_bytesReceived" class="download_data_box_progress_bytesReceived" is_hidden="true">-.--</div>
+				<div id="s3downbar_download_box_progress_speed" class="download_data_box_progress_speed" is_hidden="false">-.--</div>
+			</div>
+		</div>
+	<div style="box-sizing: initial !important; position: fixed !important; z-index: 50 !important;"><div style="box-sizing: initial !important;" class="tooltip_box" is_top="false"><div id="download_data_tooltip" class="download_data_tooltip">
+		<div class="download_data_tooltip_head">
+			<img src="data:image/png;base64,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" id="s3downbar_download_tooltip_img" class="download_data_tooltip_img" no_image="false">
+			<div id="s3downbar_download_tooltip_filename" class="download_data_tooltip_filename">22-07NetWis Lab.html </div>
+		</div>
+		<div class="download_data_tooltip_data_box" id="s3downbar_download_tooltip_data_box" is_hidden_progress="false" is_hidden_finish="true">
+			<table class="download_data_tooltip_data">
+				<tbody><tr id="s3downbar_download_tooltip_source_box" is_hidden="true"><td><div>Source:</div></td><td><input type="text" id="s3downbar_download_tooltip_source" class="download_data_tooltip_url" readonly="true"></td></tr>
+				<tr><td><div>From:</div></td><td><input type="text" id="s3downbar_download_tooltip_from" class="download_data_tooltip_url" readonly="true" title="https://research.ece.ncsu.edu/netwis2/" value="https://research.ece.ncsu.edu/netwis2/"></td></tr>
+				<tr><td><div>To:</div></td><td><div id="s3downbar_download_tooltip_to">/Users/wwang/Documents/22-07NetWis Lab.html</div></td></tr>
+				<tr class="download_progress"><td><div>Status:</div></td><td><div id="s3downbar_download_tooltip_status">-.-- / Unknown ( -.-- )</div></td></tr>
+				<tr class="download_finish"><td><div>File Size:</div></td><td><div id="s3downbar_download_tooltip_size" filenotfound="true">File not found</div></td></tr>
+				<tr class="download_finish" id="s3downbar_download_virus_scan_box" is_hidden="true"><td><div id="s3downbar_download_virus_scan_label">Virus scan:</div></td><td><a id="s3downbar_download_virus_scan" target="_blank"></a></td></tr>
+				<tr><td><div>Time Start:</div></td><td><div id="s3downbar_download_tooltip_timeStart">2022.09.08 - 17:19:20</div></td></tr>
+				<tr class="download_finish"><td><div>Time to Complete:</div></td><td><div id="s3downbar_download_tooltip_timeEnd">Unknown</div></td></tr>
+				<tr class="download_progress"><td><div>Time Left:</div></td><td><div id="s3downbar_download_tooltip_timeLeft">Unknown</div></td></tr>
+				<tr class="download_progress"><td><div>Percent Done:</div></td><td><div id="s3downbar_download_tooltip_percent">Unknown</div></td></tr>
+				<tr class="download_finish"><td><div>Average Speed:</div></td><td><div id="s3downbar_download_tooltip_speed">Unknown</div></td></tr>
+			</tbody></table>
+			<div class="download_data_tooltip_img_preview_box download_finish"><div class="download_data_tooltip_img_box">
+				<img src="" id="s3downbar_download_tooltip_img_preview" is_hidden="true" class="download_data_tooltip_img_preview download_finish" width="120" height="120">
+				<div id="s3downbar_download_tooltip_img_size" class="download_data_tooltip_img_size"></div>
+			</div></div>
+		</div>
+		<div class="download_data_tooltip_hint" id="s3downbar_download_tooltip_hint_progress" is_hidden="false">
+			<div>mouse double click: download pause/resume</div>
+			<div>mouse middle click: download cancel</div>
+		</div>
+		<div class="download_data_tooltip_hint" id="s3downbar_download_tooltip_hint_finish" is_hidden="true">
+			<div>mouse double click: open file</div>
+			<div>mouse double click + Ctrl: open dir</div>
+			<div style="padding-top: 4px !important;">mouse middle click: delete from list</div>
+			<div>mouse middle click + Ctrl: delete from system</div>
+			<div style="padding-top: 4px !important;">press mouse button + Ctrl: drag &amp; drop</div>
+		</div>
+	</div></div><div style="box-sizing: initial !important;" class="tooltip_arrow" is_top="false"></div></div></div></div></div></div>
+    <!-- Flowtype (http://simplefocus.com/flowtype/) -->
+    <script type="text/javascript" src="22-07NetWis%20Lab_files/flowtype.js"></script>
+    <!-- NanoGallery (http://nanogallery.brisbois.fr/) -->
+    <script type="text/javascript" src="22-07NetWis%20Lab_files/jquery.nanogallery.min.js"></script>
+
+    <!-- Application -->
+    <script src="22-07NetWis%20Lab_files/app.js"></script>
+    
+<!--     <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-74320054-1', 'auto');
+      ga('send', 'pageview');
+
+    </script> -->
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-77082106-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

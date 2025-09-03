@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Design & Optimization @NetWis Lab
+    </title>
+    <meta name="description" content="">
+    <link rel="stylesheet" type="text/css" href="css/application.css">
+
+    <!-- Latex -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600' rel='stylesheet' type='text/css'>
+
+    <!-- NanoGallery (http://nanogallery.brisbois.fr/) -->
+    <link href="css/nanogallery/nanogallery.min.css" rel="stylesheet" type="text/css">
+
+  </head>
+
+  <body>
+  
+    <!-- Header -->
+    <!-- Professor photos and contact infos, netwis logo, navigation (people, gallery, faqs) -->
+    <div class="header"> 
+      <!-- Professor photos and contact infos -->
+      <div class="header__item header__item--professor">
+        <div id="photo-header">
+          <a href="index.php" class="photo-header--figure">
+            <img src="img/people/wenye1996.jpg">
+            <p>1996 - Beijing</p>
+          </a>
+          <a href="index.php" class="photo-header--figure">
+            <img src="img/people/wenye2016.jpg">
+            <p>2016 - Raleigh</p>
+          </a>
+        </div>
+        <div>
+          <p> 
+            <span id="name-prof">Wenye Wang (王文野)</span><br>
+            <span id="prof">Professor, IEEE Fellow </span><br>
+               Electrical and Computer Engineering<br>
+               NC State University
+          </p>
+          <div class="contact-faculty">
+            <ul>
+              <li><a><span data-icon="&#xe602;"></span> 919-513-2549</a></li>
+              <li><a href="mailto:wwang@ncsu.edu" target="top"><span data-icon="&#xe604;"></span> wwang@ncsu.edu</a></li>
+              <li><a href="https://www.google.com/maps/place/Department+of+Electrical+and+Computer+Engineering/@35.772063,-78.674191,17z/data=!3m1!4b1!4m2!3m1!1s0x89acf59e741b1d09:0x3dff08db302f5df4" target="blank"><span data-icon="&#xe603;"></span> 3056 Engineering Building II, 890 Oval Drive<br></a></li>
+<li><a><span data-icon="&#xe605;"></span> schedule by emails. </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Netwis logo, navigation (people, gallery, faqs) -->
+      <div class="header__item header__item--nav">
+        <ul>
+          <li><a href="index.php" id="logo"><img src="img/logos/netwis2.png" width="100"></a></li>
+          <li><a href="people.php" class="">People</a></li>
+          <li><a href="gallery.php" class="">Gallery</a></li>
+          <li><a href="faqs.php" class="">FAQs</a></li>
+        </ul>
+      </div>
+        
+
+    </div>
+
+   
+    <div class="wrapper"> <!-- container for main content and aside -->
+            <div class="main"> <!-- container for main content -->
+    
+
+<div class="expandable_naration">
+  <h2>Design and Optimization</h2>
+  <p>Essential to our vision for wireless networking is a focus on the design of protocols, algorithms for wireless networks that can optimize resource utilization, network architecture, and system performance. We are pursuing this general goal in different network platforms such as cellular networks, multi-hop networks, and low-power sensor networks, through studies in several topics. </p>
+  
+  <h4>Self-organized Sensor Networks </h4>
+  <div class="research-content">
+    <p> Self-organization is a major issue in randomly deployed wireless sensor networks, and should be addressed subject to some important constraints such as sensing coverage, reliable data transport, energy efficiency, and fair load distribution. We propose to develop self-organization algorithms that can construct a network by sensors themselves without external supervision, while preserving coverage and connectivity under stringent energy and reliability constraints. </p>
+
+    <img alt="Self-Organized Sensor Network" src="img/sosn.bmp">
+
+    <p>Particularly in dense networks, energy-efficient scheduling is a key factor to extend the functionality and lifetime of the network.&nbsp; That means, only the nodes maintaining the functionality stay active whereas others are scheduled to sleep, e.g., switching to power saving mode. Therefore, the energy dissipation in sending/receiving and idle time can be significantly reduced and by updating the sleeping nodes, network lifetime can be prolonged. The fundamental challenge of scheduling is to maximize the number of sleeping nodes to conserve more energy while maintaining the functionality of the wireless sensor networks. In our work, we integrated coverage and connectivity by a tiered approach; thus, nodes having been used for connectivity or coverage have different sleeping behaviors during an update interval.&nbsp; Nodes, which are not selected for coverage or connectivity-tier, are put into <span style="font-style: italic;">sleep</span> immediately; nodes in the coverage-tier are put into <span  style="font-style: italic;">semi-sleep</span> because they can wake up for sending data and can go back to sleep mode periodically; nodes in the connectivity-tier stay <span style="font-style: italic;">active</span> in order to forward data traffic. Hence, we enable more nodes to sleep while maintaining the coverage and connectivity of the network.</p>
+
+    <p>Notice that many applications developed for wireless sensor networks (WSNs) demand for reliable communication service, since majority of these applications are event-critical applications (e.g., fire monitoring, border surveillance, etc.), we also investigate the following question: "<span style="font-style: italic;">What is the information to be delivered reliably on WSN?</span>". Especially densely deployed sensor nodes can generate many redundant messages that essentially indicate the same from the area of interest, thus posing significantly high and unnecessary communication overhead. Therefore, we introduced a new concept for WSNs as <span  style="font-style: italic;">event reliability</span> and <span  style="font-style: italic;">query reliability</span>. Event reliability is defined to be achieved when every critical event report message is received by the sink node; query reliability is defined to be achieved when every query of the sink is received by those sensors that cover the entire sensible terrain within the area of deployment. Furthermore, we need to take many related issues into consideration such as congestion control, event differentiation, overhead for acknowledgment, and energy conservation.</p>
+
+    <h5> Publications </h5>
+    <ol>
+      <li>Nurcan Tezcan and Wenye Wang, "<span>ART: An Asymmetric and Reliable Transport Mechanism for Wireless Sensor Networks</span>," <span>in Journal of Wireless Sensor Networks (JSNet)</span>,<span style="font-style: italic;">&nbsp;</span> February 2007.</li>
+      <li>Nurcan Tezcan, Wenye Wang, Mo-Yuen Chow, "A Bidirectional Transport Mechanism in Wireless Sensor Networks," in Proc. of the IEEE MILCOM'05, Atlantic City, NJ, USA. </li>
+      <li> Nurcan Tezcan and Wenye Wang, "<span>A lightweight Classification Algorithm for Energy Conservation in Wireless Sensor Networks</span>, " in <span>Proc. of the 14th&nbsp;International Conference on Computer Communication and Networks (</span><span ></span>ICCCN'05), San Diego, California , USA , October, 2005.</li>
+    </ol>
+    <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+
+  <h4>Hierarchical Network Architecture </h4>
+  <div class="research-content">
+    <p>The mobile ad hoc network (MANET) is a kind of self-configured
+    network that fits into the needs of many special application scenarios where pre-deployment of network infrastructure is infeasible or unnecessary. In large-scale MANETs, the hierarchical structure has been proven effective in addressing the scalability problems. However, node mobility poses a big challenge to the network topology stability. The wireless links connecting the nodes are subject to frequent availability&nbsp;changes as the nodes move around. The paths between communicating nodes, therefore, experience disruptions from time to time. </p>
+    
+    <img alt="Mobility Constrained Stability Analysis and Protocal Design" src="img/stability.gif" />
+    
+    <p>We are currently developing an analytical model to reveal&nbsp;the maximum architectural stability in hierarchical mobile ad hoc&nbsp;networks, which is measured by the lifetimes of clusters, inter-cluster links, and paths. The understanding of the stability bound then provides guidelines for us to design a new clustering algorithm and a new cluster-based routing protocol that work together to achieve this bound. The maximized topology stability can bring the performance benefits&nbsp;such as higher throughput, lower packet loss, and lower routing overhead than the previous clustering and routing schemes.</p>
+
+    <h5>Publications </h5>
+    <ol>
+      <li> Yi Xu and Wenye Wang, "<span> MEACA: Mobility and Energy Aware Clustering Algorithm for Constructing Stable MANETs</span>,"&nbsp; <span  style="font-style: italic;"> in the Proc. of IEEE Milcom'06</span>, Washington, D.C. October 2006.</li>
+    </ol>
+    <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+     
+  <h4>Mobility and Resource Management </h4>
+  <div class="research-content">
+    <p>User mobility, limited radio resources, and on-battery operations, along with multi-class services have been the main challenge for wireless networks, especially when mobile users move from one cell to another cell, or from one system to another system in that bandwidth or channels must be allocated prior to the arrival of mobile terminal. We have been focused on three major issues:</p>
+    <ul>
+      <li> Energy-efficient bandwidth allocation scheme for wireless networks: In this work, we study the intrinsic relationship between the energy consumption and transmission rates of mobile terminals, in which transmission rate is determined through channel allocations. Our objective is to reduce energy consumption of each terminal, while statistically meeting the requirements of quality of service (QoS) of each type of traffic. </li>
+      <li> User mobility profiling and location tracking: The most salient feature of wireless networks is mobility support, which enables mobile users to communicate with others regardless of location. It is also the very source of many challenging issues, relating to the mobility and service patterns of mobile terminals, namely, user mobility profile (UMP). For each mobile user, a UMP consists of detailed information of service requirements and mobility models that is essential to quality of service (QoS)<br /> and roaming support. Therefore, we proposed a generic framework that ca characterize not only stochastic behaviors, but historical records and predictive future locations of mobile users as well. </li>
+      <li> Inter-system location management: In heterogeneous wireless environments with different system specifications and radio frequencies, how to enable seamless roaming among these systems is one of the most important issues for mobile applications. Thus, we proposed a dynamic inter-system location management scheme, which is aimed to reduce signaling costs and improve system performance. The proposed scheme consists of two operations: inter-system location update and paging, in which bandwidth requirements, velocity, and network load are taken into account. In accordance with this scheme, a mobility application part (MAP) protocol is devised for location registration and call delivery processes to support roaming capability of mobile users moving across different network backbones and infrastructures. </li>
+    </ul>
+
+    <h5>Publications</h5>
+    <ol>
+      <li> Wenye Wang, Xinbing Wang, and Arne Nilsson, "<span>Energy-Efficient Bandwidth Allocation in Wireless Networks: Algorithms, Analysis, and Simulation</span><span>,</span>"&nbsp; <span>in IEEE Transactions on Wireless Communications</span>, Vol 5, no. 4, pp 1-12, April 2006.</li>
+      <li> Wenye Wang and Ian F. Akyildiz, "<span>A New Signaling Protocol for Intersystem Roaming in Next-Generation Wireless Systems</span>," <span>in IEEE Journals on Selected Areas in Communications (JSAC)</span>, Vol. 19, No. 10, pp. 2040-2052, October 2001. </li>
+      <li> Wenye Wang and Ian F. Akyildiz, "<span >Intersystem Location Update and Paging Schemes for Multitier Wireless Networks</span>," <span>in Proc. of ACM/IEEE MobiCom'2000</span>, pp. 99-109,&nbsp; August 2000.</li>
+    
+    </ol>
+    <button class="collapse-button"><span data-icon="&#xe621;"> Collapse</span></button>
+  </div>
+</div>
+
+      <div class="footer" id="footer">
+        <p class="copyright">Copyright &copy;2025 North Carolina State University. All Right Reserved. Questions? Contact <a href="mailto:wwang@ncsu.edu">Dr. Wenye Wang</a></p>
+      </div>
+        
+      </div> <!-- end .main -->
+
+            <div class="aside aside--left">
+        <div class="menu">
+          <div class="menu__item">  <!-- Menu: Research -->
+
+            <a href="research.php" class="on">
+              <div class="circle"><div class="circle__content">
+                <span class="menu-icon" data-icon="&#xe60b;"><br></span><span class="menu-text">Research</span>
+              </div></div>
+            </a>
+
+            <ul class="sub-menu">
+              <li class=""><a href="research.php">Overview</a></li>
+              <li class=""><a href="fundamental_properties.php">Fundamental Properties</a></li>
+              <li class="subon"><a href="design_optimization.php">Design &amp; Optimization</a></li>
+              <li class=""><a href="system_application.php">Systems &amp; Applications</a></li>
+            </ul>
+
+          </div> <!-- end .menu__item : Research -->
+
+          <div class="menu__item"> <!-- Menu: Publications -->
+            <a href="publications.php" class="">
+              <div class="circle"><div class="circle__content">
+                <span class="menu-icon" data-icon="&#xe608;"><br></span><span class="menu-text">Publications</span>
+              </div></div>
+            </a>
+          </div> <!-- end .menu__item : Publications -->
+
+          <div class="menu__item"> <!-- Menu: Downloads -->
+            <a href="downloads.php" class="">
+              <div class="circle"><div class="circle__content">
+                <span class="menu-icon" data-icon="&#xe60a;"><br></span><span class="menu-text">Downloads</span>
+              </div></div>
+            </a>
+
+            <ul class="sub-menu">
+              <li class=""><a href="downloads.php">Overview</a></li>
+              <li class=""><a href="mobility_model.php">Mobility Model</a></li>
+              <li class=""><a href="step2.php">STEP2 in WLANs</a></li>
+              <li class=""><a href="sensor_networks.php">Sensor Networks</a></li>
+              <li class=""><a href="multihop_networks.php">Multihop Networks</a></li>
+            </ul> 
+
+          </div> <!-- end .menu__item : Downloads -->
+
+          <div class="menu__item"> <!-- Menu: Projects -->
+            <a href="projects.php" class="">
+              <div class="circle"><div class="circle__content">
+                <span class="menu-icon" data-icon="&#xe606;"><br></span><span class="menu-text">Projects</span>
+              </div></div>
+            </a>
+          </div> <!-- end .menu__item : Projects -->
+        </div>
+
+        <div class="services">
+          <h5 data-icon="&#xe609;" class="aside--title"> Recent Activities</h5>
+          <p>2020 - Tutorial Co-Chair, Technical Program Committee,  <a href='http://www.comsoc.org/conferences-events' target='blank'> IEEE ICC 2020</a></p><p>2019 - Area Chair, Technical Program Committee,  <a href='http://infocom2019.ieee-infocom.org/' target='blank'> IEEE INFOCOM</a></p><p>2018 - Area Chair, Technical Program Committee,  <a href='http://infocom2018.ieee-infocom.org/' target='blank'> IEEE INFOCOM</a></p>        </div>
+
+        <a class="more-list" href="acts.php">More activities &#187;</a>
+
+        <div class="side-info side-info--aside">
+                
+
+
+        <div class="logo">
+          <a href="http://www.ece.ncsu.edu/" target="blank" style="font-size: 16px;color:rgb(189,0,0);position:relative;top:15px;right:-5px;">
+            <img src="img/logos/ece.png">
+          </a>&nbsp;
+          <a href="http://www.ncsu.edu/" target="blank">
+            <img src="img/logos/wolfpack1.png">
+          </a>
+        </div>
+
+        <!-- <div class="logo"><a href="http://www.freedm.ncsu.edu/" target="blank"><img src="img/logos/freedm-logo.png"></a></div> -->
+        <!-- <div class="logo"><a href="http://scholar.google.com/scholar?hl=en&q=wenye+wang&btnG=&as_sdt=1%2C34&as_sdtp=" target="blank"><img src="img/logos/Google_Scholar_logo.png"></a></div> -->
+        
+        
+        </div>
+        
+
+      </div> <!-- end .aside--left -->
+
+      <div class="aside aside--right">
+        <h5 data-icon="&#xe609;" class="aside--title">News</h5>
+        <div class="short-news">
+          <h6>August, 2020</h6><p>Congratulations to our team on receiving an NSF award!</p><h6>July, 2020</h6><p>Congratulations on Rui's presentation in IEEE INFOCOM Virtual Meeting!</p>        </div>
+        <a class="more-list" href="news.php">More news &#187;</a>
+        
+        <div class="calendar">
+          <h5 data-icon="&#xe618;" class="aside--title">Our Calendar</h5>
+          <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=5vo32v7mr1i2ovdsng1s1gc5rc%40group.calendar.google.com&amp;color=%23182C57&amp;ctz=America%2FNew_York" style="border-width:0" width="400" height="300" frameborder="0" scrolling="no"></iframe>
+        </div>   
+      </div> <!-- end .aside--right -->
+  
+    </div> <!-- end .wrapper -->
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Flowtype (http://simplefocus.com/flowtype/) -->
+    <script type="text/javascript" src="js/FlowType/flowtype.js"></script>
+    <!-- NanoGallery (http://nanogallery.brisbois.fr/) -->
+    <script type="text/javascript" src="js/jquery.nanogallery.min.js"></script>
+
+    <!-- Application -->
+    <script src="js/app.js"></script>
+    
+<!--     <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-74320054-1', 'auto');
+      ga('send', 'pageview');
+
+    </script> -->
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-77082106-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </body>
+</html>
