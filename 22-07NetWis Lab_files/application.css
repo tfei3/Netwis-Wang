@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,400italic,600italic");
 @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+.sub-menu li a {
+  display: inline-block;   /* 关键：让背景根据文字大小自动贴合 */
+  padding: 4px 10px;       /* 控制字周围的内边距，保证不会紧贴 */
+  border-radius: 8px;      /* 圆角 */
+  line-height: 1.4;        /* 让高度自然跟随文字 */
+}
+
+.sub-menu li.active a {
+  background-color: #bd0000;  /* 红色背景 */
+  color: #fff;                /* 白字 */
+}
 .srt {
   border: 0;
   clip: rect(0 0 0 0);
